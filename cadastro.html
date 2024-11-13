@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+
+
+
+        function victor() {
+
+            var nome = document.getElementById("NOME").value;
+            var dado1 = document.getElementById("DADO1").value;
+            var dado2 = document.getElementById("DADO2").value;
+
+
+            if (nome == "admin" && dado1 == "123" && dado2 == "admin") {
+                window.location.href = "https://www.google.com.br";
+            }
+            else {
+                document.getElementById("erro").innerHTML = "Erro no usuario ou senha";
+            }
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+    <style>
+
+        body {
+            display: flex;
+            background: #357949;
+            flex-direction: column;
+        }
+
+
+        #loginbox {
+            border-radius: 30px;
+            width: 1000px;
+            background-color: rgb(197, 212, 197);
+            height: 10px;
+            display: flex;
+        }
+
+
+
+
+        .div {
+            display: flex;
+        }
+
+
+        input {
+            width: 500px;
+            height: 25px;
+        }
+ 
+        footer {
+            background-color: #538b56;
+            background-color: ;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        } 
+
+        header {
+            background-color: #538b56;
+            background-color: ; /* Verde mais escuro */
+            color:black
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+
+        <header>
+            <h1> Cadastro de usuário do sistema</h1>
+        </header>
+
+    
+
+
+
+
+    </div>
+
+    <div id="div">
+        <p class="class1"> Nome Completo</p>
+        <input class="class" type="text" placeholder="Nome" id="NOME">
+        <br>
+        <p class="class1"> CPF</p>
+        <input class="class" type="text" placeholder="CPF" id="DADO1">
+        <br>
+        <p class="class1"> E-mail</p>
+        <input class="class" type="text" placeholder="E-mail" id="DADO2">
+        <br>
+        <p class="class1"> Digite seu E-mail novamente</p>
+        <input class="class" type="text" placeholder="Confirme E-mail" id="DADO2">
+        <br>
+        <p class="class1"> Endereço Completo</p>
+        <input class="class" type="text" placeholder="Endereço" id="DADO2">
+        <br>
+        <input class="class2" type="text" placeholder="Número" id="DADO2">
+        <br>
+        <input class="class3" type="text" placeholder="Bairro" id="DADO2">
+        <br>
+        <input class="class3" type="text" placeholder="Cidade" id="DADO2">
+        <br>
+        <input class="class3" type="text" placeholder="Estado" id="DADO2">
+        <br>
+        <input class="class2" type="text" placeholder="CEP" id="DADO2">
+        <br>
+        <p class="class1"> Criar senha</p>
+        <input class="class" type="password" placeholder="Senha" id="DADO2">
+        <p class="class1"> Confirmar senha</p>
+        <input class="class" type="password" placeholder=" Confirmar Senha" id="DADO2">
+        <br>
+        <br>
+        
+      <a href="app1.html" > <button id="btn" onclick="victor()">Cadastrar</button >  </a>
+            
+   
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EcoSwap | Todos os direitos reservados.</p>
+    </footer> 
+</body>
+
+
+
+
+
+</html>

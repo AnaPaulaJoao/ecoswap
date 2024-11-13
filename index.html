@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+    <script>
+
+        function victor() {
+
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            if (usuario == "admin" && senha == "123") {
+                window.location.href = "principal.html";
+            }
+            else {
+                document.getElementById("erro").innerHTML = "Erro no usuario ou senha";
+            }
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <style>
+        * {
+            font-size: 30px;
+
+
+        }
+
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        /*
+background: rgb(140, 203, 152);
+background: radial-gradient(circle, rgba(140, 203, 152, 1) 0%, rgba(63, 142, 99, 1) 100%);
+*/
+        #btn {
+            border-radius: 20px;
+            background-color: deepskyblue;
+
+        }
+
+        #erro {
+            color: red;
+        }
+
+        body {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            background:  #357949;
+           
+
+
+        }
+
+        #loginbox {
+            border-radius: 30px;
+            width: 500px;
+            background-color: rgb(197, 212, 197);
+            height: 500px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .class5 {
+
+            font-size: 200px;
+            display: flex;
+
+
+
+        }
+        footer {
+            background-color: #538b56;
+            background-color: ;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        header {
+            background-color: #538b56;
+            background-color: ; /* Verde mais escuro */
+            color:white;
+            padding: 10px 1000px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+      .div{
+
+     display: flex;
+
+
+      }
+
+    </style>
+
+     
+
+</head>
+
+
+
+<body>
+
+
+    </div>
+   <div id="div">
+    <header>
+        <h1>EcoSwap </h1>
+    </header>
+     </div>
+
+
+    <div id="loginbox">
+
+        <input type="text" placeholder="Usuario" id="usuario">
+        <br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br>
+        <br>
+         <a href="app1.html"><button id="btn" onclick="victor()">Login</button></a>
+        <br>
+
+        <p id="erro"></p>
+
+        <input type="checkbox">
+        <p>Lembrar senha</p>
+        <a href="cadastro.html"> Cadastro</a>
+
+
+    </div>
+
+    <div>
+
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EcoSwap | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

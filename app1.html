@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EcoSwap - Página Principal</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #357949;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #43a047;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 20px;
+            color: #388e3c;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .item-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .item-card {
+            width: 30%;
+            background-color: #f1f8e9;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item-card h3 {
+            font-size: 18px;
+            color: #388e3c;
+            margin: 10px 0;
+        }
+
+        .item-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .item-card button {
+            background-color: #43a047;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .item-card button:hover {
+            background-color: #66bb6a;
+        }
+
+        /* Botão de navegação para o chat */
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .button-container a {
+            background-color: #538557;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button-container a:hover {
+            background-color: #538b56;
+        }
+
+        footer {
+            background-color: #538b56;
+            background-color: ;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">EcoSwap</div>
+        <div class="tagline">Troque, recicle e compartilhe!</div>
+
+        <!-- Lista de itens disponíveis -->
+        <div class="item-list">
+            <div class="item-card">
+                <img src="livros.jpg" alt="Item 1">
+                <h3>Livro Usado</h3>
+                <p>Troque este livro usado em bom estado.</p>
+                
+            </div>
+
+            <div class="item-card">
+                <img src="antiguidade.jpg" alt="Item 2">
+                <h3>Antiguidades</h3>
+                <p>Troque estes itens variados e antigos.</p>
+                
+            </div>
+
+            <div class="item-card">
+                <img src="plantas.jpg" alt="Item 3">
+                <h3>Planta Ornamentais</h3>
+                <p>Troque lindas plantas ornamentais para sua casa.</p>
+                
+            </div>
+        </div>
+
+        <!-- Botão para acessar o chat -->
+        <div class="button-container">
+            <a href="chat.html">Acessar Chat</a>
+        </div>
+        <div class="button-container">
+            <a href="interreses.html"> Selecione seus interesses </a>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 EcoSwap | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
